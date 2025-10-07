@@ -30,7 +30,7 @@ public class DigitalPrescriptionSystem {
         } while (choice != 4);
     }
 
-    // 👨‍⚕️ DOCTOR SECTION
+    //  DOCTOR SECTION
     public static void doctorMenu() {
         System.out.print("\nEnter Doctor Name: ");
         String doctorName = sc.nextLine();
@@ -59,7 +59,7 @@ public class DigitalPrescriptionSystem {
         System.out.println("[QR CODE LINK] https://qrcode.show/" + prescID);
     }
 
-    // 💊 PHARMACIST SECTION
+    //  PHARMACIST SECTION
     static void pharmacistMenu() {
         System.out.print("\nEnter Prescription QR Code (ID) to Validate: ");
         String qr = sc.nextLine();
@@ -100,7 +100,7 @@ public class DigitalPrescriptionSystem {
         }
     }
 
-    // 🏥 DOH SECTION
+    //  DOH SECTION
     static void dohMenu() {
         System.out.println("\n==== Department of Health - Prescription Records ====");
         if (prescriptions.isEmpty()) {
@@ -120,7 +120,7 @@ public class DigitalPrescriptionSystem {
     }
 }
 
-// 📄 PRESCRIPTION CLASS
+//  PRESCRIPTION CLASS
 class Prescription {
     private String id;
     private String doctor;
